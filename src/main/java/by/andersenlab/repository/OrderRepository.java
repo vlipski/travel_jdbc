@@ -6,12 +6,13 @@ import by.andersenlab.pojo.User;
 import java.sql.SQLException;
 
 public interface OrderRepository {
-    Long save(Order order ) throws SQLException, IllegalAccessException;
 
-    int update(Order order) throws SQLException;
+    Long save(Order order ) throws RepositoryException;
 
-    int remove(Order order) throws SQLException;
+    int update(Order order) throws RepositoryException;
 
-    Order get(Long id) throws SQLException;
+    int remove(Order order) throws RepositoryException;
+
+    Order get(Long id) throws RepositoryException;
 }
 

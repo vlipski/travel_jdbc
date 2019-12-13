@@ -53,8 +53,6 @@ public class UserRepositoryImpl implements UserRepository {
             log.error("Save user error ", e);
             throw new RepositoryException("Save user error " + e.getMessage());
         }
-
-
     }
 
     @Override
